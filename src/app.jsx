@@ -53,6 +53,7 @@ class Application extends React.Component {
             containers: null,
             containersFilter: "all",
             containersStats: {},
+            pods: {},
             // Mapping of quadlet containers and pods on the system to show
             // inactive containers and pods as quadlets are ephemeral and the
             // container/pod is not kept around when they are stopped.
@@ -62,7 +63,6 @@ class Application extends React.Component {
             quadletPods: {},
             textFilter: "",
             ownerFilter: "all",
-            dropDownValue: 'Everything',
             notifications: [],
             version: '1.3.0',
             selinuxAvailable: false,
